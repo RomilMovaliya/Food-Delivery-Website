@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#items{
+    margin: 25px;
+}
+
+.container{
+    margin-inline: 100px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.box{
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.box img{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    height: 160px;
+    width: 100%;
+}
+
+.box p{
+    padding: 10px;
+}
+@media screen and (max-width:550px) {
+    .container{
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+       
+    }
+
+    .box{
+        width: 100%;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .box img{
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        height: 180px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .container{
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+       
+    }
+
+    .box{
+        width: 55%;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .box img{
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        height: 150px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .container{
+        margin-inline: 20px !important;
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+       
+    }
+
+    .box{
+        width: 80%;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .box img{
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        height: 150px;
+        width: 100%;
+    }
+}

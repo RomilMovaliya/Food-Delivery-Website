@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.foodpic2 {
+    display: flex;
+    margin: 200px;
+    gap: 20px;
+    justify-content: center;
+}
+
+.container1 img {
+    width: 100%;
+    height: 620px;
+    border-radius: 16px;
+
+}
+
+.container1 {
+    align-items: center;
+
+    display: flex;
+    flex: 2;
+}
+
+.container2 {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.container2 img {
+    border-radius: 16px;
+
+    width: 100%;
+    height: 300px;
+}
+
+
+.container1 img::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+}
+
+.container1 .headline1 {
+    position: absolute;
+    z-index: 2;
+    font-size: 74px;
+    color: white;
+    font-weight: bolder;
+    margin-left: 5%;
+    margin-right: 60%;
+
+}
+
+
+
+/* tablet size */
+
+@media screen and (max-width:1180px) {
+    .foodpic2 {
+        /* other part will remain as it is */
+        margin: 20px;
+
+    }
+
+
+    .container1 .headline1 {
+        /* other part will remain as it is */
+        margin-right: 40%;
+    }
+
+
+}
+
+
+/* mobile size */
+
+@media screen and (max-width:900px) {
+
+.foodpic2 {
+/* other part will remain as it is */
+margin-top: 60px;
+gap: 10px;
+}
+
+.container1 img {
+/* other part will remain as it is */
+height: 420px;
+}
+
+.container1 {
+/* no changes */
+}
+
+.container2 {
+/* other part will remain as it is */
+gap: 10px;
+}
+
+.container2 img {
+/* other part will remain as it is */
+height: 204px;
+}
+
+
+.container1 img::before {
+/* no changes */
+}
+
+.container1 .headline1 {
+/* other part will remain as it is */
+font-size: 60px;
+margin-left: 5%;
+margin-right: 50%;
+}
+
+
+
+}
+
+
+/* mobile size */
+
+@media screen and (max-width:490px) {
+
+    .foodpic2 {
+        /* other part will remain as it is */
+        margin: 20px;
+        gap: 10px;
+    }
+
+    .container1 img {
+        /* other part will remain as it is */
+        height: 220px;
+    }
+
+    .container1 {
+        /* no changes */
+    }
+
+    .container2 {
+        /* other part will remain as it is */
+        gap: 10px;
+    }
+
+    .container2 img {
+        /* other part will remain as it is */
+        height: 104px;
+    }
+
+
+    .container1 img::before {
+        /* no changes */
+    }
+
+    .container1 .headline1 {
+        /* other part will remain as it is */
+        font-size: 30px;
+        margin-left: 5%;
+        margin-right: 60%;
+    }
+
+
+
+}

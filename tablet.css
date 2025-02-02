@@ -1,0 +1,81 @@
+@media screen and (max-width: 550px){
+    .search-container {
+        display: flex;
+        align-items: center;
+        width: 350px;
+        margin-top: 60px;
+        /* border: 2px solid #ffc107;*//* Yellow border */
+        border-radius: 8px;
+        overflow: hidden;
+        background-color: #D9D9D9;
+    }
+    
+    .search-container select {
+        border: none;
+        outline: none;
+        padding: 10px;
+        background: transparent;
+        font-size: 12px;
+        cursor: pointer;
+    }
+    
+    .search-container input {
+        flex: 1;
+        border: none;
+        background-color: #D9D9D9;
+        outline: none;
+        padding: 8px;
+        font-size: 11px;
+    }
+    
+    .search-container .search-icon {
+        padding-right: 2px;
+        margin-right: 2px;
+        background: transparent;
+        font-size: 12px;
+        color: #999999;
+    }
+    
+   
+
+
+    /* best-item-content */
+
+    .best-item-content{
+        margin: 25px;
+     }
+     
+     .best-item-content h1{
+         font-size: 48px;
+         text-align: center;
+         color:rgba(255, 194, 0, 1) ;
+     }
+     
+     .best-item-content p{
+         font-size: 16px;
+         text-align: center;
+         color:rgba(0, 0, 0, 1);
+     }
+     
+
+     /* Popular Recipes section */
+#popular-recipe{
+    margin-top: -20px;
+}
+
+.headline{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.headline h1{
+    font-size: 40px;
+    font-family: Inter;
+    font-weight: 700;
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+}
+
+}

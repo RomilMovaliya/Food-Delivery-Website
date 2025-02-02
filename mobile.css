@@ -1,0 +1,687 @@
+/* tablet screen */
+
+@media screen and (max-width:900px) {
+
+    #recipes .content::after,
+    #recipes .content::before{
+        background-size: 75px 125px;
+    }
+    
+    #recipes #tabs ul {
+        padding: 0 2.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: space-evenly;
+    }
+    
+    #recipes #tabs ul li {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+   
+    
+    #recipes .carousal .card{
+    flex: 1 0 240px;
+    }
+    
+    
+    
+    }
+
+    
+@media screen and (max-width:900px) {
+/*
+        +-----------------------------------------------------------------------------------------------------------------+
+        |                                                                                                                 |
+        |                                        Popular Recipes section                                                  |      
+        |                                                                                                                 |
+        +-----------------------------------------------------------------------------------------------------------------+
+*/
+/* Popular Recipes section */
+#popular-recipe{
+    
+}
+
+.headline{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headline .left-img img{
+    width: 70%;
+   
+}
+
+
+.headline .right-img img{
+    width: 70%;
+}
+
+.headline h1{
+    font-size: 48px;
+    font-family: Inter;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+
+    background-color: rgb(230, 243, 254);
+   
+}
+
+.btn a{
+  text-decoration: none;
+  color: black;
+}
+
+/* Active button styling */
+.btn a.active {
+    color: white;
+    background-color: rgba(246, 183, 22, 1);
+}
+
+.active{
+    color: white;
+    background-color: rgba(246, 183, 22, 1);
+}
+
+.btn:hover,a:hover{
+    color: white;
+    background-color: rgba(246, 183, 22, 1);
+}
+
+
+
+
+
+/* food pic section */
+
+#foods {
+    margin-block: 50px;
+}
+
+
+.foodpic {
+    background-image: url("./images/larger-pic1.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 440px;
+}
+
+.foodpic::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 440px;
+    background: rgba(0, 0, 0, 0.46);
+}
+
+.foodpic * {
+    z-index: 10;
+}
+
+
+
+.foodpic h1 {
+    position: absolute;
+    z-index: 10;
+    color: white;
+}
+
+
+
+.img-content h1 {
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        font-size: 60px;
+        /* border: 3px solid yellow; */
+        padding-left: 80px;
+        padding-right: 40px;
+         margin-top: 150px; 
+}
+
+
+h1 .primary-text{
+color: orange;
+}
+
+
+.foodpic2 {
+    margin: 50px !important;
+    gap: 10px;
+}
+
+}
+
+@media screen and (max-width:550px) {
+
+
+/* home section */
+
+#home {
+    position: relative; /* Add relative positioning to create a reference for ::before */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+    background-color: #00000075;
+    align-items: center;
+}
+
+#home::before {
+    content: '';
+    position: absolute; /* Positioned relative to the #home container */
+    background: url(./images/image1.jpg) no-repeat center center/cover;
+    height: 100%; /* Make sure the background image covers the section height */
+    width: 100%;
+    z-index: -1; /* Ensure the background stays behind content */
+}
+
+#home h1{
+    left: 50;
+    top: 0;
+    margin-top: 150px;
+    position: absolute;
+    z-index: 2; /* Ensure content appears above the background */
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+#home p{
+    left: 50;
+    top: 0;
+    margin-top: 220px;
+    position: absolute;
+    z-index: 2; /* Ensure content appears above the background */
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 300px !important;
+    margin-top: 15rem !important;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #D9D9D9;
+}
+
+.search-container select {
+    border: none;
+    outline: none;
+    padding: 10px;
+    background: transparent;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-container input {
+    flex: 1;
+    border: none;
+    background-color: #D9D9D9;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.search-container .search-icon {
+    padding: 10px;
+    background: transparent;
+    font-size: 18px;
+    color: #999999;
+}
+
+.gap{
+    margin-left: 10px;
+    margin-left: 10px;
+}
+
+
+
+/* utility class */
+.h-primary{
+    position: relative;
+    font-size: 2.8rem;
+    padding: 12px;
+} 
+
+
+#best-item{
+    margin-inline: 40px;
+}
+
+
+/* food pic section */
+
+#foods {
+    margin-block: 80px;
+}
+
+.foodpic {
+    background-image: url("./images/larger-pic1.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 430px;
+}
+
+.foodpic::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 430px;
+    background: rgba(0, 0, 0, 0.46);
+}
+
+
+.foodpic2 {
+    margin: 40px !important;
+    gap: 10px;
+}
+
+
+.img-content h1 {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    font-size: 60px;
+    /* border: 3px solid yellow; */
+    padding-left: 35px;
+    padding-right: 40px;
+     margin-top: 50px; 
+}
+}
+
+
+@media screen and (max-width:350px) {
+    /* food pic section */
+
+#foods {
+    margin-block: 50px;
+}
+
+
+.foodpic {
+    background-image: url("./images/larger-pic1.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.foodpic::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.46);
+}
+
+.foodpic * {
+    z-index: 10;
+}
+
+
+
+.foodpic h1 {
+    position: absolute;
+    z-index: 10;
+    color: white;
+}
+
+
+
+.img-content h1 {
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        font-size: 60px;
+        /* border: 3px solid yellow; */
+        padding-left: 50px;
+        padding-right: 40px;
+         margin-top: 80px; 
+}
+
+
+h1 .primary-text{
+color: orange;
+}
+
+
+
+}
+
+
+
+
+    /* mobile screen */
+    @media screen and (max-width:350px) {
+        #recipes .content::after,
+       #recipes .content::before{
+           background-size: 50px 100px;
+       }
+       
+       #recipes #tabs ul {
+           padding: 0 2.5rem;
+           display: flex;
+           flex-wrap: wrap;
+           gap: 1.5rem;
+           justify-content: space-evenly;
+       }
+       
+       #recipes #tabs ul li {
+           padding: 0.5rem 1rem;
+           font-size: 0.9rem;
+       }
+       
+       
+       #recipes .carousal .card{
+           flex: 1 0 250px;
+       }
+       
+       
+
+
+
+        /* food pic section */
+
+
+    #best-item{
+        margin-inline: 20px;
+    }
+
+#foods {
+    margin-block: 50px;
+}
+
+
+.foodpic {
+    background-image: url("./images/larger-pic1.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 440px;
+}
+
+.foodpic::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 440px;
+    background: rgba(0, 0, 0, 0.46);
+}
+
+.foodpic * {
+    z-index: 10;
+}
+
+
+
+.foodpic h1 {
+    position: absolute;
+    z-index: 10;
+    color: white;
+}
+
+
+
+.img-content h1 {
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        font-size: 30px;
+        /* border: 3px solid yellow; */
+        padding-left: 50px;
+        padding-right: 40px;
+         margin-top: 80px; 
+}
+
+
+h1 .primary-text{
+color: orange;
+}
+ 
+
+.foodpic2 {
+    margin: 40px !important;
+    gap: 10px;
+}
+}
+
+
+@media screen and (max-width:330px) {
+  
+    .navbar ul .circle{
+        background-color: #FFC300;
+        z-index: 2px;
+        position: absolute;
+        top: 8px;
+        right: 30px;
+        color: white;
+        font-weight: bold;
+        height: 0.8rem;
+        width: 0.8rem;
+        font-size: 0.7rem;
+        text-align: center;
+        border-radius: 50%
+    }
+    
+
+
+    .navbar{
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        width: 100%;
+        display: flex;
+        padding-left: 10px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    
+    .logo p{
+        color: rgba(255, 195, 0, 1);
+        font-family: 'Poppins';
+        font-weight: 500px;
+        font-size: 20px;
+        margin-left: 20px;
+        line-height: 30px;
+    }
+    
+    .navbar ul{
+        display: flex;
+        margin-right: 20px;
+    }
+    
+    li{
+        color: white;
+        font-family:'Times New Roman', Times, serif ;
+        margin: 15px;
+        list-style: none;
+    }
+    
+        
+
+    /* home section */
+
+#home {
+    position: relative; /* Add relative positioning to create a reference for ::before */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+    background-color: #00000075;
+    align-items: center;
+}
+
+#home::before {
+    content: '';
+    position: absolute; /* Positioned relative to the #home container */
+    background: url(./images/image1.jpg) no-repeat center center/cover;
+    height: 100%; /* Make sure the background image covers the section height */
+    width: 100%;
+    z-index: -1; /* Ensure the background stays behind content */
+}
+
+#home h1{
+    left: 50;
+    top: 0;
+    margin-top: 150px;
+    position: absolute;
+    z-index: 2; /* Ensure content appears above the background */
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#home p{
+    left: 50;
+    top: 0;
+    margin-top: 220px;
+    position: absolute;
+    z-index: 2; /* Ensure content appears above the background */
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+
+
+    .search-container {
+        display: flex;
+        align-items: center;
+        width: 250px !important;
+        margin-top: 15rem !important;
+        border-radius: 8px;
+        overflow: hidden;
+        background-color: #D9D9D9;
+    }
+
+    .search-container select {
+        border: none;
+        outline: none;
+        padding: 10px;
+        background: transparent;
+        font-size: 10px;
+        cursor: pointer;
+    }
+    
+    .search-container input {
+        flex: 1;
+        border: none;
+        background-color: #D9D9D9;
+        outline: none;
+        padding: 10px;
+        font-size: 16px;
+    }
+    
+    .search-container .search-icon {
+        padding: 10px;
+        background: transparent;
+        font-size: 18px;
+        color: #999999;
+    }
+    
+    
+    /* food pic section */
+
+
+     #best-item{
+        margin-inline: 20px;
+    }
+
+#foods {
+    margin-block: 50px;
+}
+
+
+.foodpic {
+    background-image: url("./images/larger-pic1.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 340px;
+}
+
+.foodpic::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 340px;
+    background: rgba(0, 0, 0, 0.46);
+}
+
+.foodpic * {
+    z-index: 10;
+}
+
+
+
+.foodpic h1 {
+    position: absolute;
+    z-index: 10;
+    color: white;
+}
+
+
+
+.img-content h1 {
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        font-size: 30px;
+        /* border: 3px solid yellow; */
+        padding-left: 50px;
+        padding-right: 40px;
+         margin-top: 80px; 
+}
+
+
+h1 .primary-text{
+color: orange;
+}
+ 
+
+
+.foodpic2 {
+    margin: 40px !important;
+    gap: 10px;
+}
+
+
+}
+
+
