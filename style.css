@@ -1551,6 +1551,33 @@ line-height: 1.4;
 
 
 @media screen and (max-width:390px) {
+
+    
+    .dishes{
+        width:100%;
+       display: flex;
+       align-items: center;
+       gap: 20px;
+       padding: 20px;
+       flex-direction: column;
+    }
+
+    .dish img{
+        border-radius: 50%;
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+    }
+
+    .line {
+        height:50px;
+        width: 2px; /* Ensure it spans the full width of its container */
+        background-color: orange;
+        margin: 0px 30px; /* Add some margin to create spacing above and below the line */
+    }
+
+
+
     .curv-card  .card-img{
     /* border: 3px solid blue; */
     left: 0;
