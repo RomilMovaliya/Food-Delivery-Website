@@ -468,7 +468,6 @@ p {
 
 #recipes .carousal {
     display: flex;
-    overflow-x: auto;
 }
 
 #recipes .carousal::-webkit-scrollbar {
